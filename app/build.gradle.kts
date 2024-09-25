@@ -35,6 +35,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    buildFeatures{
+        viewBinding=true
+    }
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -85,6 +88,9 @@ dependencies {
     implementation("androidx.navigation:navigation-ui:$nav_version")
     // Feature module support for Fragments
     implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
+
+    //Flow
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
 
 
 }
